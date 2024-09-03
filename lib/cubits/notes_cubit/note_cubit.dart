@@ -17,6 +17,6 @@ List <NoteModel>?notes;
 List <NoteModel> notes =notesBox.values.toList();
 /////////////// it's the same 
 
-  
+  emit(NoteSuccess());
     }
 }
