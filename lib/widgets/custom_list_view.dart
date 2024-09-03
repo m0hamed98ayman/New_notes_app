@@ -18,9 +18,11 @@ class CardListView extends StatelessWidget {
               itemCount: notes.length,
               padding: EdgeInsets.zero,
               itemBuilder: (context, index) {
-                return const Padding(
-                  padding: EdgeInsets.only(bottom: 10.0),
-                  child: CustomCard(),
+                return  Padding(
+                  padding:const EdgeInsets.only(bottom: 10.0),
+                  child: CustomCard(
+                    note: notes[index],
+                  ),
                 );
               }),
         );
